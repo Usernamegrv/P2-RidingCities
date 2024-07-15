@@ -1,9 +1,9 @@
 /*GENERAL*/
 :root {
-  --main-color: #E44444; /* var(--main-color) */
-  --second-color: #CD487B; /* var(--second-color) */
-  --light-grey-color: #EDEDED; /* var(--light-grey-color) */
-  --drak-grey-color: #4B4B4B; /* var(--drak-grey-color) */
+	--main-color: #e44444; /* var(--main-color) */
+	--second-color: #cd487b; /* var(--second-color) */
+	--light-grey-color: #ededed; /* var(--light-grey-color) */
+	--drak-grey-color: #4b4b4b; /* var(--drak-grey-color) */
 }
 
 body {
@@ -17,16 +17,15 @@ body {
 	max-width: 1440px;
 }
 
-h2, 
+h2,
 h3 {
-	font-family: 'Archivo', sans-serif;
+	font-family: "Archivo", sans-serif;
 	font-style: normal;
 }
 
 h2 {
 	text-align: center;
 }
-
 
 /*HEADER*/
 header {
@@ -55,7 +54,7 @@ header .headerTextContent {
 }
 
 h1 {
-	font-family: 'Inter', sans-serif;
+	font-family: "Inter", sans-serif;
 	font-style: normal;
 	font-weight: 900;
 	font-size: 62px;
@@ -63,16 +62,13 @@ h1 {
 	color: white;
 }
 
-
-
 /*CONTENT*/
 section {
 	padding-bottom: 80px;
 	padding-top: 80px;
 }
 
-h2
-{
+h2 {
 	font-weight: 900;
 	font-size: 35px;
 	line-height: 38px;
@@ -97,14 +93,13 @@ article {
 }
 
 p {
-	font-family: 'Archivo';
+	font-family: "Archivo";
 	font-style: normal;
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 17px;
 	color: var(--drak-grey-color);
 }
-
 
 /***************/
 .directionRow {
@@ -126,7 +121,7 @@ p {
 .whiteContentSection h2,
 .whiteContentSection h3,
 .whiteContentSection p {
-	color:  white;
+	color: white;
 }
 
 .textCenter {
@@ -150,7 +145,7 @@ p {
 
 	box-sizing: border-box;
 
-	font-family: 'Archivo';
+	font-family: "Archivo";
 	font-style: normal;
 	font-weight: 600;
 	font-size: 16px;
@@ -185,4 +180,18 @@ p {
 .buttonHighlight:hover {
 	font-weight: 800;
 	border-width: 3px;
+}
+
+@media screen and (min-width: 375px) {
+	.container {
+		max-width: 375px;
+	}
+	header {
+		height: 700px;
+		left: 140px;
+	}
+
+	header img {
+		height: 100%;
+	}
 }
