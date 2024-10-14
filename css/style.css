@@ -75,6 +75,8 @@ h2 {
 	color: var(--main-color);
 	padding-bottom: 40px;
 	margin-top: 0;
+	display: flex;
+	justify-content: center;
 }
 
 h3 {
@@ -182,16 +184,21 @@ p {
 	border-width: 3px;
 }
 
-@media screen and (min-width: 375px) {
+@media screen and (max-width: 600px) {
 	.container {
-		max-width: 375px;
+		/* max-width: 600px; */
+		min-width: 600px;
 	}
-	header {
-		height: 700px;
-		left: 140px;
+	header img,
+	header .headerTextContent {
+		width: 600px;
 	}
-
-	header img {
-		height: 100%;
+	.directionRow {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		justify-items: center;
+	}
+	.directionRow article {
+		width: 50%;
 	}
 }
